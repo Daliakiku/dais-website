@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Biotif-med';
+    src: url("./fonts/Biotif-Medium.ttf");
+}
+@font-face {
+    font-family: 'Biotif-light';
+    src: url("./fonts/Biotif-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Biotif-reg';
+    src: url("./fonts/Biotif-Regular.ttf");
+}
+
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  
+    overflow-y: auto;
+}
+
+body{
+    height: 100%;
+    background-color: rgb(246, 246, 246);
+    color: rgb(22, 22, 22);  
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    font-family: 'Biotif-reg', sans-serif;
+    margin: 0px 25px;
+    margin-top: 18px;
+}
+
+nav ul {
+    display: flex; /* Ensure the list items are in a row */
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Add spacing between items */
+}
+
+nav a {
+    text-decoration: none; 
+    color: black; 
+    font-size: 25px; 
+    margin-right: 50px;
+}
+
+#line {
+    width: 95%;
+    height: 1px;
+    background-color: rgb(22, 22, 22);
+    margin: 5px auto;
+    align-content: center;
+    margin-bottom: 100px;
+}
+
+img {
+    max-width: 95%; /* Reduce the width to allow for larger margins */
+    height: auto;    
+    display: block;  
+    margin: 10px auto; /* Top/Bottom: 50px, Left/Right: auto for centering */
+}
+
+#subtitle{
+    text-align: left; 
+    font-size: 25px;     
+    margin-left: 35px; 
+    font-family: 'Biotif-reg', sans-serif;
+}
+
+#title{
+    text-align: left; 
+    font-size: 60px;     
+    margin-left: 35px; 
+    font-family: 'Biotif-med', sans-serif;
+    transform: scale(1, 1.1); /* Scale the title to make it taller */
+}
+
+#title2{
+    text-align: left; 
+    font-size: 60px;     
+    margin-left: 15px; 
+    margin-top: 20px;
+    font-family: 'Biotif-med', sans-serif;
+    transform: scale(1, 1.1); /* Scale the title to make it taller */
+}
+
+p {
+    text-align: center; 
+    font-size: 25px;
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+    margin-left: 30px; 
+    margin-right: 30px;
+    font-family: 'Biotif-reg', sans-serif;
+}
+
+.image-grid {
+    display: grid; /* Use CSS Grid Layout */
+    grid-template-columns: repeat(2, 1fr); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Add padding around the grid */
+    justify-items: center; /* Center images horizontally */
+}
+
+.image-grid img {
+    width: 100%; /* Make the image fill the grid cell */
+    aspect-ratio: 1 / 1; /* Force a square aspect ratio */
+    object-fit: cover; /* Ensures the image fills the square without distortion */
+    border-radius: 2px; /* Optional rounded corners */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.image-grid img:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.image-grid figcaption {
+    text-align: left; /* Center the caption text */
+    font-size: 35px; /* Adjust the font size */
+    font-family: 'Biotif-med', sans-serif; /* Use your preferred font */
+    margin-top: 8px; /* Add spacing between the image and the caption */
+    line-height: 1.4; /* Adjust line height for better readability */
+    margin-left: 14px; /* Add left margin to align with the image */
+}
+
+.article-link{
+    text-decoration: none; 
+    color: black; 
+    font-size: 25px; 
+    margin-right: 50px;
+    font-family: 'Biotif-reg', sans-serif;
+}
